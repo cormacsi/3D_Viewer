@@ -67,7 +67,7 @@ $(APP): $(LIB)
 
 install: $(APP)
 	@cmake --build $(FRONT_BUILD) --target all
-	@open $(shell pwd)/$(FRONT_BUILD)
+	@open $(shell pwd)/$(FRONT_BUILD)/3D_Viewer.app
 
 uninstall:
 	cd $(FRONT_BUILD) && $(MAKE) clean
